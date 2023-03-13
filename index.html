@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reserva de Hotel</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <header>
+        <h1>Reserva de hotel</h1>
+    </header>
+        <div class="container-reserva">
+            <form action="">
+                <div class="habitacion">
+                <label for="habitacion">Elige tipo de habitacion:</label>
+                <select name="habitacion" id="habitacion">
+                    <option value="standard">Standard</option>
+                    <option value="junior-suite">Junior Suite</option>
+                    <option value="suite">Suite</option>
+                </select>
+                </div>
+                <div class="uso-spa" id="uso-spa">
+                    <label for="">Desea hacer uso del Spa:</label>
+                    <input type="checkbox" id="spa">
+                </div>
+                <div class="ocupacion">
+                    <label for="">Elige ocupacion de la habitacion:</label>
+                    <select name="" id="ocupacion">
+                        <option value="individual">Individual</option>
+                        <option value="doble">Doble</option>
+                        <option value="triple">Triple</option>
+                    </select>
+                </div>
+                <div class="noches">
+                    <label for="">Numero de noches:</label>
+                    <input type="number" id="noches" name="noches" min="1" value="1">
+                </div>
+                <div class="parking">
+                    <label for="">Noches de Parking:</label>
+                    <input type="number" id="parking" name="parking" min="0" value="0">
+                </div>
+                <div class="calcular" id="calcular">
+                    <button>Calcular total</button>
+                </div>
+                <div>
+                    <p id="resultado"></p>
+                </div>
+            </form>
+        </div>
+    <script src="app.js"></script>
+</body>
+
+
